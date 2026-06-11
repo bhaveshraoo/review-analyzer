@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-API_BASE = "http://localhost:8000"
+API_BASE = "https://web-production-4e424.up.railway.app"
 
 def show_login():
     st.title("📊 Review Analyzer")
