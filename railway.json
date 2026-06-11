@@ -3,11 +3,6 @@
     "builder": "NIXPACKS"
   },
   "deploy": {
-    "startCommand": "python3 -m uvicorn backend.main:app --host 0.0.0.0 --port $PORT",
-    "frontend": {
-      "installCommand": "cd frontend && pip install -r requirements.txt",
-      "buildCommand": "cd frontend && python -m streamlit run app.py",
-      "outputDirectory": "frontend/build"
-    }
+    "startCommand": "python3 -m uvicorn backend.main:app --host 0.0.0.0 --port $PORT"
   }
 }
