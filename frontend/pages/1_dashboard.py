@@ -4,9 +4,14 @@ import plotly.graph_objects as go
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 import matplotlib
+import os
 matplotlib.use("Agg")
 
+<<<<<<< HEAD
 API_BASE = "https://web-production-4e424.up.railway.app"
+=======
+API_BASE = os.environ.get("BACKEND_URL", "http://localhost:8000")
+>>>>>>> 49b3ecf (Auto create tables on startup)
 
 if "token" not in st.session_state or not st.session_state.token:
     st.warning("Please login first")

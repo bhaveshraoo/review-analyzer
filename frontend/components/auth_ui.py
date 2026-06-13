@@ -1,7 +1,12 @@
 import streamlit as st
 import requests
+import os
 
+<<<<<<< HEAD
 API_BASE = "https://web-production-4e424.up.railway.app"
+=======
+API_BASE = os.environ.get("BACKEND_URL", "http://localhost:8000")
+>>>>>>> 49b3ecf (Auto create tables on startup)
 
 def show_login():
     st.title("📊 Review Analyzer")

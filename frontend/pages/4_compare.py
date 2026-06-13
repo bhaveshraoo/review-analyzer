@@ -1,8 +1,13 @@
 import streamlit as st
 import requests
 import plotly.graph_objects as go
+import os
 
+<<<<<<< HEAD
 API_BASE = "https://web-production-4e424.up.railway.app"
+=======
+API_BASE = os.environ.get("BACKEND_URL", "http://localhost:8000")
+>>>>>>> 49b3ecf (Auto create tables on startup)
 
 if "token" not in st.session_state or not st.session_state.token:
     st.warning("Please login first")
